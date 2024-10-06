@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jack'Gym</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
  <!--Navigation bar-->
@@ -36,7 +36,6 @@
         <div class="gallery">
             <img src= \assets\pexels-julia-larson-6456178.jpg alt="Training session">
             <img src= \assets\pexels-pixabay-260352.jpg alt="Rack of Dumbells">
-            <img src= \assets\pexels-psalms-bogwasi-243130413-12374604.jpg alt="Picture of Jack's Gym">
             <img src= \assets\pexels-willpicturethis-1954524.jpg alt="Treadmils">
             <img src= \assets/pexels-yankrukov-8436595.jpg alt="Class in session">
         </div>
@@ -50,6 +49,33 @@
     </section>
 
     <!--Contact Section-->
-    
+    <section id="contact"
+    <form action="#" method "post">
+       <label for="name">Name:</label>
+         <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <label for="inquiry">inquiry Type</label>
+            <select id="inquiry" name="inquiry" required>
+                <option value="general">General Inquiry</option>
+                <option value="membership">Membership Inquiry</option>
+                <option value="personal training">Personal Training Inquiry</option>
+                <option value="services">Services</option>
+            </select>
+
+            <button type="submit">Submit</button>
+    </form>
+    </section> 
+
+    <!--Footer Section-->
+    <footer>
+        <p>&copy; 2024 Jack's Gym. All rights reserved.</p>
+        <p>Contact us at: info@jacksgym.com | Phone: (555) 123-4567</p>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,141 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+  }
+
+  nav {
+    background-color: #333;
+    padding: 15 0px;
+    width: 100%;
+  }
+
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+    nav ul li {
+        padding: 0 30px;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 10px;
+    }
+
+    nav ul li a:hover {
+        text-decoration: underline;
+    }
+
+    /* Header Section */
+    header {
+        background: url(assets\pexels-psalms-bogwasi-243130413-12374604.jpg) no-repeat center center/cover;
+        color: white;
+        height: 300px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    header h1 {
+        font-size: 50px;
+        margin: 0;
+        color: #000000;
+    }
+
+    header p {
+        font-size: 24px;
+        margin: 0;
+        color: #333;
+    }
+
+    /*/ Section Styling */
+    section {
+        padding: 40px 20px;
+        text-align: center;
+        background-color: rgb(0, 0, 0);
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 18px;
+        color: #fffefe;
+        line-height: 1.5;
+    }
+
+    /* gallery Section */
+    .gallery {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .gallerty-container img {
+        width: 150px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    /* contact form */
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form label {
+        font-size: 16px;
+        margin-bottom: 5px;
+        color: white;
+    }
+
+    form input, form textarea, form select {
+        width: 100%;
+        max-width: 400px;
+        padding: 10px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        
+    }
+
+    form button {
+        background-color: #333;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    form button:hover {
+        background-color: #555;
+    }
+
+    /* Footer Section */
+    footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        margin-top: 20px;
+    }
+
+    footer p {
+        margin: 5px 0;
+    }
