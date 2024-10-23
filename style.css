@@ -5,220 +5,211 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-color: #f4f4f4;
-  }
+}
 
-  nav {
+nav {
     background-color: #333;
-    padding: 15 0;
+    padding: 15px 0;
     width: 100%;
-  }
+}
 
-  nav ul {
+nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
 
-    nav ul li {
-        padding: 0 30px;
-    }
+nav ul li {
+    padding: 0 30px;
+}
 
-    nav ul li a {
-        color: white;
-        text-decoration: none;
-        font-size: 16px;
-    }
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
 
-    nav ul li a:hover {
-        text-decoration: underline;
-    }
+nav ul li a:hover {
+    text-decoration: underline;
+}
 
-    /* Header Section */
-    header {
-        background-image: url('assets/pexels-psalms-bogwasi-243130413-12374604.jpg');
-        background-size: cover;
-        background-position: center;
-        background-color: #333;
-        height: 300px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        
-      }
-      
+/* Header Section */
+header {
+    background-image: url('assets/pexels-psalms-bogwasi-243130413-12374604.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: #333;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
+header h1 {
+    font-size: 50px;
+    margin: 0;
+    color: #3300ff;
+}
+
+header p {
+    font-size: 24px;
+    margin: 0;
+    color: #3300ff;
+}
+
+/* Section Styling with grid layout */
+section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #222;
+    margin-bottom: 20px;
+}
+
+/* Grid Layout */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+    color: #fffefe;
+    line-height: 1.5;
+}
+
+/* About and Services grid */
+#about, #services {
+    padding: 40px 20px;
+}
+
+#about {
+    background-color: #333;
+    color: white;
+}
+
+#services {
+    color: white;
+}
+
+/* Gallery Section Grid */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* More responsive layout for gallery */
+    gap: 20px;
+    justify-content: center;
+    color: lightwhite;
+}
+
+.gallery img {
+    width: 100%; /* Makes sure images scale correctly */
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+#gallery h2 {
+    color: white;
+}
+
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+form label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+form input, form textarea, form select {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #444;
+    color: white;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
     header h1 {
-        font-size: 50px;
-        margin: 0;
-        color: #3300ff;
+        font-size: 36px;
     }
 
     header p {
-        font-size: 24px;
-        margin: 0;
-        color: #3300ff;
+        font-size: 20px;
     }
 
-    /*/ Section Styling with grid layout */
-    section {
-        padding: 40px 20px;
-        text-align: center;
-        background-color: #222;
-        margin-bottom: 20px;
-    }
-    /* Grid Layout */
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 20px;
-    }
-
-    h2 {
-        font-size: 32px;
-        margin-bottom: 20px;
-        text-align: center;
-    }
-
-    p {
-        font-size: 18px;
-        color: #fffefe;
-        line-height: 1.5;
-    }
-
-    /* About and services grid */
-    #about, #services {
-        padding: 40px 20px;
-    }
-
-    #about {
-        background-color: #333;
-        color: white;
-    }
-
-    #services {
-        color: white;
-    }
-
-    /* gallery Section  grid addition*/
-    .gallery {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Grid-based layout for gallery */
-        gap: 20px;
-        justify-content: center;
-        color: light white;
-    }
-    
-    .gallery img {
-        width: 350px;
-        height: auto;
-        object-fit: cover;
-        border-radius: 5px;
-    }
-    
-
-    .gallery-container img {
-        width: 150px; 
-        height: auto; 
-        object-fit: cover; 
-        border-radius: 5px; 
-      }
-
-      .gallery h2 {
-        color: white;
-      }
-
-    /* contact form */
-    form {
-        display: flex;
+    nav ul {
         flex-direction: column;
-        align-items: center;
-        color: white;
     }
 
-    form label {
-        font-size: 16px;
-        margin-bottom: 5px;
-        color: white;
+    nav ul li {
+        padding: 10px 0;
     }
 
     form input, form textarea, form select {
-        width: 100%;
-        max-width: 400px;
-        padding: 10px;
-        margin-bottom: 15px;
-        border-radius: 5px;
-        border: 1px solid #ccc;
-        background-color: #444; 
-        color: white; 
+        max-width: 100%;
     }
-    
-    form button:hover {
-        background-color: #777; 
-    }
-    
+}
 
-    form button:hover {
-        background-color: #555;
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 28px;
     }
 
-    /* Footer Section */
-    footer {
-        background-color: #333;
-        color: white;
-        text-align: center;
-        padding: 20px 0;
-        margin-top: 20px;
+    header p {
+        font-size: 18px;
     }
 
-    footer p {
-        margin: 5px 0;
+    section {
+        padding: 20px 10px;
     }
 
-    /* Media Queries */
-    @media (max-width: 768px) {
-        header h1 {
-            font-size: 36px;
-        }
-    
-        header p {
-            font-size: 20px;
-        }
-    
-        nav ul {
-            flex-direction: column;
-        }
-    
-        nav ul li {
-            padding: 10px 0;
-        }
-    
-        form input, form textarea, form select {
-            max-width: 100%;
-        }
+    h2 {
+        font-size: 24px;
     }
-    
-    @media (max-width: 480px) {
-        header h1 {
-            font-size: 28px;
-        }
-    
-        header p {
-            font-size: 18px;
-        }
-    
-        section {
-            padding: 20px 10px;
-        }
-    
-        h2 {
-            font-size: 24px;
-        }
-    
-        p {
-            font-size: 16px;
-        }
+
+    p {
+        font-size: 16px;
     }
+
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust grid for smaller screens */
+    }
+}
