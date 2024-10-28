@@ -51,13 +51,11 @@ header {
 
 header h1 {
     font-size: 50px;
-    margin: 0;
     color: #3300ff;
 }
 
 header p {
     font-size: 24px;
-    margin: 0;
     color: #3300ff;
 }
 
@@ -115,54 +113,71 @@ p {
     width: 100%; /* Makes sure images scale correctly */
     height: auto;
     object-fit: cover;
-    border-radius: 5px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease
+}
+
+.gallery img:hover {
+    transform: scale(1.05); /* Slight zoom-in on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
 }
 
 #gallery h2 {
     color: white;
+    font-size: 36px;
+    margin-bottom: 30px;
 }
 
 
-/* Contact Form */
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* Contact Section */
+#contact h2 {
+    color: white; /* Set title color to white */
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+#contact form {
+    background-color: #333; /* Dark background for contrast */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#contact .form-label {
+    color: white; /* Label color for dark background */
+}
+
+#contact .form-control, #contact .form-select {
+    background-color: #555; /* Field background color */
     color: white;
+    border: 1px solid #777;
 }
 
-form label {
-    font-size: 16px;
-    margin-bottom: 5px;
+#contact button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #00bfff;
+    border: none;
     color: white;
-}
-
-form input, form textarea, form select {
-    width: 100%;
-    max-width: 400px;
-    padding: 10px;
-    margin-bottom: 15px;
     border-radius: 5px;
-    border: 1px solid #ccc;
-    background-color: #444;
-    color: white;
 }
 
-form button:hover {
-    background-color: #555;
+#contact button:hover {
+    background-color: #007bff;
 }
+
 
 /* Footer Section */
 footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 20px 0;
+    padding: 40px 0;
     margin-top: 20px;
 }
 
 footer p {
-    margin: 5px 0;
+    margin: 0;
+    font-size: 16px;
 }
 
 /* Media Queries */
